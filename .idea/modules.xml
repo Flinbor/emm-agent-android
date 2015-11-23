@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/emm-agent-android.iml" filepath="$PROJECT_DIR$/.idea/emm-agent-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emm-agent-android-master.iml" filepath="$PROJECT_DIR$/emm-agent-android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emmagentandroid/emmagentandroid.iml" filepath="$PROJECT_DIR$/emmagentandroid/emmagentandroid.iml" />
     </modules>
   </component>
 </project>
