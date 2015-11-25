@@ -1,15 +1,9 @@
 package org.wso2.emm.agent.utils;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.security.KeyStore;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Random;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.net.ParseException;
+import android.util.Log;
 
 import org.apache.http.HeaderElement;
 import org.apache.http.HttpEntity;
@@ -31,10 +25,16 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HTTP;
 import org.wso2.emm.agent.R;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.net.ParseException;
-import android.util.Log;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.security.KeyStore;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Random;
 
 public class HTTPConnectorUtils {
 	
@@ -248,6 +248,8 @@ public class HTTPConnectorUtils {
 					+ CommonUtilities.SERVER_PORT
 					+ CommonUtilities.SERVER_APP_ENDPOINT + url;
 		}
+
+
 		Log.v(TAG, ipSaved+"Posting '" + params.toString() + "' to " + endpoint);
 		StringBuilder bodyBuilder = new StringBuilder();
 		Iterator<Entry<String, String>> iterator = params.entrySet().iterator();

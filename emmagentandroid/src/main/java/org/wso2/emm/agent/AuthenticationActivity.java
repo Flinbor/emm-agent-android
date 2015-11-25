@@ -93,9 +93,6 @@ public class AuthenticationActivity extends ActionBarActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_authentication);
-		getSupportActionBar().setDisplayShowCustomEnabled(true);
-		getSupportActionBar().setCustomView(R.layout.custom_sherlock_bar);
-		getSupportActionBar().setTitle(R.string.empty_app_title);
 
 		this.activity = AuthenticationActivity.this;
 		this.context = AuthenticationActivity.this;
@@ -520,7 +517,6 @@ public class AuthenticationActivity extends ActionBarActivity implements
 								CommonDialogUtils
 										.stopProgressDialog(progressDialog);
 								showInternalServerErrorMessage();
-
 							} else {
 								Log.e(TAG, "Status: " + responseStatus);
 								showAuthCommonErrorMessage();

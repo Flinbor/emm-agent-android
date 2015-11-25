@@ -16,11 +16,11 @@
 
 package org.wso2.emm.agent.utils;
 
-import org.wso2.emm.agent.R;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+
+import org.wso2.emm.agent.R;
 
 /**
  * Helper class providing methods and constants common to other classes in the
@@ -33,7 +33,7 @@ public class CommonUtilities {
 
 	public static String SERVER_IP = "";
 
-	public static String SERVER_PORT = "9763";
+	public static String SERVER_PORT = "9443";
 	public static String SERVER_PROTOCOL = "http://";
 	public static String API_VERSION = "1.0.0";
 	
@@ -74,7 +74,6 @@ public class CommonUtilities {
 	/* Method types. */
 	public static final String GET_METHOD = "GET";
 	public static final String POST_METHOD = "POST";
-	
 
 	public static String getSERVER_URL() {
 		return SERVER_URL;
